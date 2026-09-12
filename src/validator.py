@@ -12,17 +12,3 @@ def validate_order_event(event):
     validate(instance=event, schema=schema) 
 
     return True   
-
-test_event = {
-    "event_id": "evt_000001",
-    "event_type": "order.created",
-    "event_version": 1,
-    "timestamp": "2026-09-12T10:15:32Z",
-    "source": "ecommerce",
-    "customer_id": "cust_1023",
-    "order_id": "ord_78451",
-    "amount": 12500.00,
-    "currency": "LKR"
-}
-
-print(validate_order_event(test_event))
