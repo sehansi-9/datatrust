@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from validator import validate_order_event
+from src.validator import validate_order_event
 
 def generate_order_event():
     return {
